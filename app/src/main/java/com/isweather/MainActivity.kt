@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             tvEstatus?.text = ciudadbcn.estatus
         }
         else if (ciudad == "ciudad-madrid") {
-            // mostrar info de la ciudad de bcn
+            // mostrar info de la ciudad de madrid
             tvCiudad?.text = ciudadmad.nombre
             tvGrados?.text = ciudadmad.grados.toString() + "º"
             tvEstatus?.text = ciudadmad.estatus
