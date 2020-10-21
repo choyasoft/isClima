@@ -1,14 +1,14 @@
 package com.isweather
 
-class Ciudad(nombre:String,grados:Int, estatus:String) {
-    var nombre: String = ""
-    var grados: Int = 0
-    var estatus: String = ""
+class Ciudad(nombre:String,weather:ArrayList<Weather>, main:Main) {
+    var name: String = ""
+    var weather: ArrayList<Weather>? = null
+    var main: Main? = null
 
     init{
-        this.nombre = nombre
-        this.grados = grados
-        this.estatus = estatus
+        this.name = name
+        this.weather = weather
+        this.main = main
     }
 
 }
