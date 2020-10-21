@@ -42,7 +42,7 @@
         android:layout_marginStart="-94dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="-111dp"
-        android:fontFamily="@font/baloo"
+        android:fontFamily="@string/texto_grados"
         android:text="@string/texto_ciudad"
         android:textAlignment="center"
         android:textColor="@color/colorCiudad"
@@ -67,4 +67,3 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="28sp" />
 </RelativeLayout>
-

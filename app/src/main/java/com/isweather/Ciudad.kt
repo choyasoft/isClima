@@ -1,6 +1,6 @@
 package com.isweather
 
-class Ciudad(nombre:String,weather:ArrayList<Weather>, main:Main) {
+class Ciudad(name:String,weather:ArrayList<Weather>, main:Main) {
     var name: String = ""
     var weather: ArrayList<Weather>? = null
     var main: Main? = null
