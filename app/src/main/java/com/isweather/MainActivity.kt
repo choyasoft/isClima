@@ -1,16 +1,14 @@
 package com.isweather
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     var tvEstatus: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Thread.sleep(1000)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -26,35 +25,39 @@ class MainActivity : AppCompatActivity() {
         tvGrados = findViewById(R.id.tvGrados)
         tvEstatus = findViewById(R.id.tvEstatus)
 
+
         val ciudad = intent.getStringExtra("com.isweather.ciudades.CIUDAD")
 
-        if (Network.hayRed(this)) {
-            //ejecutar solicitud HTTP
-            solicitudHTTPVolley("http://api.openweathermap.org/data/2.5/weather?id="+ciudad+"&appid=eeccf4730d646e8aabbc3e19b72a9b2d&units=metric&lang=es")
+       if (Network.hayRed(this)) {
 
-        } else {
-            //mostrar mensaje
-            Toast.makeText(this,"No hay internet", Toast.LENGTH_SHORT).show()
+                //ejecutar solicitud HTTP
+                solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?id=" + ciudad + "&appid=eeccf4730d646e8aabbc3e19b72a9b2d&units=metric&lang=es")
+          }else{
+                // mostrar mensaje
+                Toast.makeText(this, "No hay internet", Toast.LENGTH_SHORT).show()
+           }
         }
-}
     //Método para Volley
-        fun solicitudHTTPVolley(url: String) {
-            val queue = Volley.newRequestQueue(this)
+    private fun solicitudHTTPVolley(url: String) {
 
-            val solicitud =
-                StringRequest(Request.Method.GET, url, Response.Listener<String> { response ->
-                    try {
-                        Log.d("solicitudHTTPVolley", response)
-                        val gson = Gson()
-                        val ciudad = gson.fromJson(response, Ciudad::class.java)
-                        tvCiudad?.text = ciudad.name
-                        tvGrados?.text = ciudad.main?.temp.toString() + "º"
-                        tvEstatus?.text = ciudad.weather?.get(0)?.description
-                    } catch (e: Exception) {
+        val queue = Volley.newRequestQueue(this)
 
-                    }
-                }, Response.ErrorListener { })
+        val solicitud = StringRequest(Request.Method.GET, url, { response ->
 
-            queue.add(solicitud)
-        }
+            try {
+                Log.d("solicitudHTTPVolley", response)
+                val gson = Gson()
+                val ciudad = gson.fromJson(response, Ciudad::class.java)
+                tvCiudad?.text = ciudad.name
+                tvGrados?.text = ciudad.main?.temp.toString() + "º"
+                tvEstatus?.text = ciudad.weather?.get(0)?.description
+            } catch (e: Exception) {
+
+            }
+        }, { })
+
+        queue.add(solicitud)
     }
+
+    }
+

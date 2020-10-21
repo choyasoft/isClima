@@ -24,11 +24,13 @@ class Ciudades : AppCompatActivity() {
             intent.putExtra(TAG, "3108288")
             startActivity(intent)
         })
+
         bBcn.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra(TAG, "3128760")
             startActivity(intent)
         })
+
         bMad.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra(TAG, "3117735")
