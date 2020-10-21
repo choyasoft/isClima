@@ -12,9 +12,13 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:text="@string/texto_bienvenida"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/bTgn"
@@ -22,7 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/texto_boton_tarragona"
-        android:textColor="@android:color/holo_orange_light" />
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/bBcn"
@@ -30,7 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/texto_boton_barcelona"
-        android:textColor="@android:color/holo_orange_light" />
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/bMad"
@@ -38,5 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/texto_boton_madrid"
-        android:textColor="@android:color/holo_orange_light" />
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp" />
 </LinearLayout>

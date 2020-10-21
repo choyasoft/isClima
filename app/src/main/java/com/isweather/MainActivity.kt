@@ -31,16 +31,13 @@ class MainActivity : AppCompatActivity() {
         if (Network.hayRed(this)) {
             //ejecutar solicitud HTTP
             solicitudHTTPVolley("http://api.openweathermap.org/data/2.5/weather?id="+ciudad+"&appid=eeccf4730d646e8aabbc3e19b72a9b2d&units=metric&lang=es")
-            // eeccf4730d646e8aabbc3e19b72a9b2d
-            // Tarragona Ciudad: 3108288
 
         } else {
             //mostrar mensaje
             Toast.makeText(this,"No hay internet", Toast.LENGTH_SHORT).show()
         }
 }
-
-        //Método para Volley
+    //Método para Volley
         fun solicitudHTTPVolley(url: String) {
             val queue = Volley.newRequestQueue(this)
 
