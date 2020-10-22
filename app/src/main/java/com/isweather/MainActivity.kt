@@ -78,7 +78,11 @@ class MainActivity : AppCompatActivity() {
             } else {
                 if (ciudad.weather?.get(0)?.description?.contains("lluv")!! || ciudad.weather?.get(0)?.description?.contains("llov")!! ) {
                     imageClima.setImageResource(R.drawable.lluvia)
+
                 } else {
+                    if (ciudad.weather?.get(0)?.description?.contains("torm")!!) {
+                        imageClima.setImageResource(R.drawable.storm)
+                    }else{
                     imageClima.setImageResource(R.drawable.vacio)
                 }
             }
