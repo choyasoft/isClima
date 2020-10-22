@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,22 +9,21 @@
 
     <TextView
         android:id="@+id/tvGrados"
-        android:layout_width="108dp"
-        android:layout_height="88dp"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="160dp"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="serif"
+        android:gravity="center"
         android:text="@string/texto_grados"
         android:textAlignment="center"
         android:textColor="@color/colorGrados"
-        android:textSize="76sp"
-        android:textStyle="bold" />
+        android:textSize="74sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageClima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvCiudad"
@@ -39,15 +38,18 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentBottom="false"
         android:layout_centerInParent="true"
-        android:layout_marginStart="-94dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="-111dp"
         android:fontFamily="@string/texto_grados"
         android:text="@string/texto_ciudad"
         android:textAlignment="center"
         android:textColor="@color/colorCiudad"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageClima"
+        app:layout_constraintVertical_bias="0.622"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvEstatus"
@@ -61,24 +63,34 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="12dp"
+        android:gravity="center"
         android:text="@string/texto_estatus"
         android:textAlignment="center"
-        android:textColor="@color/colorGrados"
+        android:textColor="@color/colorDescription"
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvCiudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageClima"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageClima"
-        android:layout_width="157dp"
-        android:layout_height="148dp"
+        android:layout_width="152dp"
+        android:layout_height="142dp"
         android:layout_below="@+id/tvCiudad"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="109dp"
-        android:background="@android:color/transparent" />
-</RelativeLayout>
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,6 @@ class MainActivity : AppCompatActivity() {
 
 
     //Método para Volley
-    @SuppressLint("UseCompatLoadingForDrawables")
     private fun solicitudHTTPVolley(url: String) {
 
         val queue = Volley.newRequestQueue(this)
@@ -57,9 +56,9 @@ class MainActivity : AppCompatActivity() {
                 Log.d("solicitudHTTPVolley", response)
                 val gson = Gson()
                 val ciudad = gson.fromJson(response, Ciudad::class.java)
-                tvCiudad?.text = ciudad.name
+                tvCiudad?.text = ciudad.name.toUpperCase()
                 tvGrados?.text = ciudad.main?.temp.toString() + "º"
-                tvEstatus?.text = ciudad.weather?.get(0)?.description
+                tvEstatus?.text = ciudad.weather?.get(0)?.description?.toUpperCase()
                 setimageClima(ciudad)
             } catch (e: Exception) {
 
@@ -71,16 +70,16 @@ class MainActivity : AppCompatActivity() {
 
     fun setimageClima(ciudad: Ciudad) {
 
-        if (ciudad.weather?.get(0)?.description?.contains("nubes")!!) {
+        if (ciudad.weather?.get(0)?.description?.contains("nubes")!! || ciudad.weather?.get(0)?.description?.contains("nuboso")!! ) {
             imageClima.setImageResource(R.drawable.cloudy)
         } else {
             if (ciudad.weather?.get(0)?.description?.contains("sol")!!) {
                 imageClima.setImageResource(R.drawable.sol)
             } else {
-                if (ciudad.weather?.get(0)?.description?.contains("lluvia")!!) {
+                if (ciudad.weather?.get(0)?.description?.contains("lluv")!! || ciudad.weather?.get(0)?.description?.contains("llov")!! ) {
                     imageClima.setImageResource(R.drawable.lluvia)
                 } else {
-                    imageClima.setImageResource(R.drawable.ic_launcher_background)
+                    imageClima.setImageResource(R.drawable.vacio)
                 }
             }
         }
