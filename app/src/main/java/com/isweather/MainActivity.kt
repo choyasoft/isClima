@@ -41,7 +41,11 @@ class MainActivity : AppCompatActivity() {
         if (Network.hayRed(this)) {
 
             //ejecutar solicitud HTTP
-            solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?id=" + ciudad + "&appid=eeccf4730d646e8aabbc3e19b72a9b2d&units=metric&lang=es")
+            val url_source = "https://api.openweathermap.org/data/2.5/weather?id="
+            val api_key = "&appid=eeccf4730d646e8aabbc3e19b72a9b2d"
+            val units = "&units=metric"
+            val lang = "&lang=es"
+            solicitudHTTPVolley(url_source + ciudad + api_key + units + lang)
 
         } else {
             // mostrar mensaje
