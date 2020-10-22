@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     var imagenClima: ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Thread.sleep(600)
+        Thread.sleep(300)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
