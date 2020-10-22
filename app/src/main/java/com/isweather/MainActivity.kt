@@ -70,20 +70,27 @@ class MainActivity : AppCompatActivity() {
 
     fun setimageClima(ciudad: Ciudad) {
 
-        if (ciudad.weather?.get(0)?.description?.contains("nubes")!! || ciudad.weather?.get(0)?.description?.contains("nuboso")!! ) {
+        if (ciudad.weather?.get(0)?.description?.contains("nubes")!! || ciudad.weather?.get(0)?.description?.contains(
+                "nuboso"
+            )!!
+        ) {
             imageClima.setImageResource(R.drawable.cloudy)
         } else {
             if (ciudad.weather?.get(0)?.description?.contains("sol")!!) {
                 imageClima.setImageResource(R.drawable.sol)
             } else {
-                if (ciudad.weather?.get(0)?.description?.contains("lluv")!! || ciudad.weather?.get(0)?.description?.contains("llov")!! ) {
+                if (ciudad.weather?.get(0)?.description?.contains("lluv")!! || ciudad.weather?.get(0)?.description?.contains(
+                        "llov"
+                    )!!
+                ) {
                     imageClima.setImageResource(R.drawable.lluvia)
 
                 } else {
                     if (ciudad.weather?.get(0)?.description?.contains("torm")!!) {
                         imageClima.setImageResource(R.drawable.storm)
-                    }else{
-                    imageClima.setImageResource(R.drawable.vacio)
+                    } else {
+                        imageClima.setImageResource(R.drawable.vacio)
+                    }
                 }
             }
         }
