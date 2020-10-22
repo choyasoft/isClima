@@ -11,7 +11,7 @@
         android:id="@+id/tvGrados"
         android:layout_width="290dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="serif"
         android:gravity="center"
         android:text="@string/texto_grados"
