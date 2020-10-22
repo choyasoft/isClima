@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/climabackground"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,12 +19,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="88dp"
         android:layout_marginEnd="160dp"
-        android:background="@color/colorPrimary"
         android:fontFamily="serif"
         android:text="@string/texto_grados"
         android:textAlignment="center"
         android:textColor="@color/colorGrados"
-        android:textSize="76sp" />
+        android:textSize="76sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvCiudad"
@@ -46,7 +46,8 @@
         android:text="@string/texto_ciudad"
         android:textAlignment="center"
         android:textColor="@color/colorCiudad"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvEstatus"
@@ -64,6 +65,7 @@
         android:layout_marginEnd="12dp"
         android:text="@string/texto_estatus"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="28sp" />
+        android:textColor="@color/colorGrados"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 </RelativeLayout>

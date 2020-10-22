@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     var tvEstatus: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Thread.sleep(1000)
+        Thread.sleep(600)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
