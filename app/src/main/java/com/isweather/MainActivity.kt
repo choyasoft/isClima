@@ -1,8 +1,10 @@
 package com.isweather
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -12,7 +14,6 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     var tvGrados: TextView? = null
     var tvEstatus: TextView? = null
     var imagenClima: ImageView? = null
+    var tvViento: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(300)
@@ -31,13 +33,16 @@ class MainActivity : AppCompatActivity() {
         tvEstatus = findViewById(R.id.tvEstatus)
 
         imagenClima = findViewById(R.id.imageClima)
+        tvViento = findViewById(R.id.tvViento)
 
         val ciudad = intent.getStringExtra("com.isweather.ciudades.CIUDAD")
+
 
         if (Network.hayRed(this)) {
 
             //ejecutar solicitud HTTP
             solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?id=" + ciudad + "&appid=eeccf4730d646e8aabbc3e19b72a9b2d&units=metric&lang=es")
+
         } else {
             // mostrar mensaje
             Toast.makeText(this, "No hay internet", Toast.LENGTH_SHORT).show()
@@ -57,8 +62,9 @@ class MainActivity : AppCompatActivity() {
                 val gson = Gson()
                 val ciudad = gson.fromJson(response, Ciudad::class.java)
                 tvCiudad?.text = ciudad.name.toUpperCase()
-                tvGrados?.text = ciudad.main?.temp.toString() + "º"
+                tvGrados?.text = ciudad.main?.temp?.toInt().toString() + "º"
                 tvEstatus?.text = ciudad.weather?.get(0)?.description?.toUpperCase()
+                tvViento?.text = ciudad.wind?.speed?.toInt().toString() + "Km/h"
                 setimageClima(ciudad)
             } catch (e: Exception) {
 

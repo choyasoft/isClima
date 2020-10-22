@@ -4,6 +4,7 @@
     <string name="texto_grados"></string>
     <string name="texto_ciudad"></string>
     <string name="texto_estatus"></string>
+    <string name="texto_viento"></string>
     <string name="texto_bienvenida">Bienvenido a IvySoft Clima! Selecciona una opción:</string>
     <string name="texto_boton_tarragona">Clima de Tarragona</string>
     <string name="texto_boton_barcelona">Clima de Barcelona</string>
