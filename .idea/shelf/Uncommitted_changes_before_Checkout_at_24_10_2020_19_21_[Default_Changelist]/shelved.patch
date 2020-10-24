@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/isweather/Network.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.isweather\r\n\r\nimport android.content.Context\r\nimport android.net.ConnectivityManager\r\nimport androidx.appcompat.app.AppCompatActivity\r\n\r\nclass Network {\r\n\r\n    companion object{\r\n        fun hayRed(activity: AppCompatActivity):Boolean {\r\n            val connectivityManager = activity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager\r\n            val networkInfo = connectivityManager.activeNetworkInfo\r\n            return networkInfo != null && networkInfo.isConnected\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/isweather/Network.kt	(revision 2bd9cea86354d5e680ce2e571e6cd6d8676cbb0d)
++++ app/src/main/java/com/isweather/Network.kt	(date 1603559874000)
+@@ -4,6 +4,7 @@
+ import android.net.ConnectivityManager
+ import androidx.appcompat.app.AppCompatActivity
+ 
++
+ class Network {
+ 
+     companion object{

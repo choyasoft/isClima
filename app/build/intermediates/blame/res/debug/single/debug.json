@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_claro.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\claro.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_storm.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\storm.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cloudy.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\cloudy.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lluvia.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\lluvia.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ciudades.xml.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\layout\\activity_ciudades.xml"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vacio.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\vacio.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_climabackground.jpg.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\climabackground.jpg"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Programas\\IvySoftWeather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\Programas\\IvySoftWeather\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    }
+]
