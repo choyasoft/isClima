@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     var imagenClima: ImageView? = null
     var tvViento: TextView? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(300)
         super.onCreate(savedInstanceState)
@@ -80,19 +81,17 @@ class MainActivity : AppCompatActivity() {
 
     fun setimageClima(ciudad: Ciudad) {
 
-        if (ciudad.weather?.get(0)?.description?.contains("nubes")!! || ciudad.weather?.get(0)?.description?.contains(
-                "nuboso"
-            )!!
+        if (ciudad.weather?.get(0)?.description?.contains("nubes")!! || ciudad.weather?.get(0)?.description?.contains("nuboso")!!
         ) {
             imageClima.setImageResource(R.drawable.cloudy)
+
         } else {
-            if (ciudad.weather?.get(0)?.description?.contains("sol")!!) {
-                imageClima.setImageResource(R.drawable.sol)
+            if (ciudad.weather?.get(0)?.description?.contains("sol")!! || ciudad.weather?.get(0)?.description?.contains("claro")!!) {
+                imageClima.setImageResource(R.drawable.claro)
+
             } else {
                 if (ciudad.weather?.get(0)?.description?.contains("lluv")!! || ciudad.weather?.get(0)?.description?.contains(
-                        "llov"
-                    )!!
-                ) {
+                        "llov")!!) {
                     imageClima.setImageResource(R.drawable.lluvia)
 
                 } else {
